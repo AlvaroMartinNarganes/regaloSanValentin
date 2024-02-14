@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Cuanto me quiere Marta</h1>
+  <div class="slice">
+    <input
+      [formControl]="sliceForm"
+      type="range"
+      name="cantidad"
+      id="cantidad"
+      min="0"
+      max="10"
+      step="1"
+      value="1" />
+    <output class="price-output" for="cantidad">{{sliceForm.value}}</output>
+  </div>
+  @if(sliceForm.value!=null && sliceForm.value>=5){
+    <img src="assets/img/happy.gif" alt="happy" class="happy">
+    <button (click)="router.navigate(['quiero'])">SIGUIENTE</button>
+  }
+</div>
+

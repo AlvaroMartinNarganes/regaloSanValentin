@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Cuanto quiero yo a Marta</h1>
+  <div class="slice">
+    <input
+      disabled
+      type="range"
+      name="cantidad"
+      id="cantidad"
+      min="0"
+      max="10"
+      step="1"
+      value="10" />
+    <output class="price-output" for="cantidad">1000</output>
+  </div>
+  <button (click)="router.navigate(['fin'])">SIGUIENTE</button>
+</div>
+
